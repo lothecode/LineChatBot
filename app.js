@@ -32,11 +32,7 @@ bot.on('message', function (event) { // event.message.text是使用者傳給bot�
     default:
       event.reply('不要再說了，我肚子好餓！')
   }
-  event.reply(replyMsg).then(function (data) { //將訊息回傳給使用者
-    // success 
-  }).catch(function (error) {
-    // error 
-  })
+
 })
 
 app.post('/', linebotParser)
