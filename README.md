@@ -22,6 +22,6 @@
 - 回覆: 不要再說了，我肚子好餓！
 
 ## 環境說明
-Node.js
-Express
-Deploy on heroku
+- Node.js
+- Express
+- Deploy on heroku
