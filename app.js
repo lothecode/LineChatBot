@@ -16,7 +16,9 @@ const linebotParser = bot.parser()
 
 bot.on('message', function (event) { // event.message.text是使用者傳給bot的訊息
   console.log(event)
-  event.reply(event.message.text).then(function (data) { //將訊息回傳給使用者
+
+  let replyMsg = `Hello你剛才說的是:${event.message.text}`
+  event.reply(replyMsg).then(function (data) { //將訊息回傳給使用者
     // success 
   }).catch(function (error) {
     // error 
