@@ -12,7 +12,7 @@ const bot = linebot({
   channelSecret: process.env.CHANNEL_SECRET,
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
 })
-// const linebotParser = bot.parser()
+const linebotParser = bot.parser()
 
 bot.on('message', function (event) { // event.message.text是使用者傳給bot的訊息
   console.log(event)
@@ -23,7 +23,7 @@ bot.on('message', function (event) { // event.message.text是使用者傳給bot�
   })
 })
 
-// app.post('/', linebotParser)
+app.post('/', linebotParser)
 app.get('/', (req, res) => {
   res.send(`<H1>Hi LineBOT</h1>`)
 })
