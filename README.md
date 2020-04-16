@@ -1,4 +1,4 @@
-## This is a simple Line ChatBot app : 今天練什麼?
+## This is a simple Line ChatBot app : 和ducklo聊聊今天練什麼跑喔~
 
 ## QR code
 ![image](https://github.com/lothecode/LineChatBot/blob/master/945qhczo.png?raw=true)
