@@ -1,7 +1,7 @@
 ## This is a simple Line ChatBot app : 今天練什麼?
 
 ## QR code
-![image](https://qr-official.line.me/sid/L/945qhczo.png)
+![image](https://github.com/lothecode/LineChatBot/blob/master/945qhczo.png?raw=true)
 
 
 ## Features
