@@ -16,7 +16,22 @@ const linebotParser = bot.parser()
 
 bot.on('message', function (event) { // event.message.text是使用者傳給bot的訊息
 
-  var replyMsg = `Hello你剛才說的是:${event.message.text}`
+  switch (event.message.text) {
+    case 'LSD':
+      event.reply(`${event.message.text} 至少要跑12K`)
+      break
+    case '今天跑多少':
+      event.reply('今天跑個6K吧~')
+      break
+    case 'hello':
+      event.reply('Hello 你是在哈囉什麼? 快去跑步！')
+      break
+    case '天氣':
+      event.reply('別管天氣了，跑者是防風防水的！')
+      break
+    default:
+      event.reply('不要再說了，我肚子好餓！')
+  }
   event.reply(replyMsg).then(function (data) { //將訊息回傳給使用者
     // success 
   }).catch(function (error) {
@@ -29,6 +44,7 @@ app.get('/', (req, res) => {
   res.send(`<H1>Hi LineBOT</h1>`)
 })
 
+// 用自己的server就這麼寫, 否則用bot.listen
 app.listen(process.env.PORT || 3000, () => {
   console.log('Express server for LineBOT start')
 })
